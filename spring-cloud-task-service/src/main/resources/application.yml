@@ -1,0 +1,20 @@
+server:
+  port: 9204
+spring:
+  application:
+    name: spring-cloud-task-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.204:3306/admin
+    username: root
+    password: even366
+  jpa:
+    database: MySQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+        dialect: org.hibernate.dialect.MYSQL5Dialect
