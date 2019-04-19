@@ -1,0 +1,5 @@
+spring:
+  appliction:
+    name: spring-cloud-admin-user-service
+server:
+  port: 9203
