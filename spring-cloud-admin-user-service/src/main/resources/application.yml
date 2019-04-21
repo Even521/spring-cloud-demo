@@ -1,6 +1,0 @@
-spring:
-  cloud:
-    config:
-      uri: http://eureka:9201
-      name: spring-cloud-admin-user
-      profile: ${spring.cloud.config.name:dev}
