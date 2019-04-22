@@ -6,3 +6,4 @@
 */.mvn
 */mvnw.cmd
 */mvnw
+/spring-cloud-config-service/src/main/resources/application.yml
