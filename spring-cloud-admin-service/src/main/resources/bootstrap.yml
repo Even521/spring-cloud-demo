@@ -10,10 +10,10 @@ spring:
       profile: ${spring.profiles.active}
         #discovery:
         # enabled: true
-      # service-id: config
+       #service-id: config
       label: ${spring.profiles.active}
       enabled: true
-#º‡øÿ∂Ãµ„≈‰÷√
+
 management:
   security:
     enabled: false
