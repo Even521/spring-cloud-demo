@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-admin-user
+    name: spring-cloud-admin
   profiles:
     active: dev
   cloud:
