@@ -12,7 +12,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: xujin_route
+        - id: baidu
           uri: http://www.baidu.com
           predicates:
             - Path=/baidu
