@@ -1,0 +1,20 @@
+server:
+  port: 9299
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:9200/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: xujin_route
+          uri: http://www.baidu.com
+          predicates:
+            - Path=/baidu
+
+

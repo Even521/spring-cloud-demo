@@ -1,0 +1,5 @@
+spring:
+  appliction:
+    name: spring-cloud-sleuth-service
+server:
+  port: 9205
