@@ -16,5 +16,5 @@ spring:
           uri: http://www.baidu.com
           predicates:
             - Path=/baidu
-
+        - id:
 

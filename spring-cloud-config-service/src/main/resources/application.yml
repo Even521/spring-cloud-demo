@@ -14,6 +14,40 @@ spring:
         git:
           uri: https://github.com/Even521/spring-cloud-demo.git
           search-paths: spring-cloud-config-repo
-      label: master
+          ignoreLocalSshSettings: true
+          hostKey: someHostKey
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: ｜-----BEGIN OPENSSH PRIVATE KEY-----
+            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
+            -----END OPENSSH PRIVATE KEY-----
 
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:9200/eureka/
 
