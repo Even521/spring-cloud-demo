@@ -13,6 +13,7 @@
   <modules>
     <!--公共封装模块-->
     <module>common-core</module>
+    <module>common-security</module>
   </modules>
   <dependencies>
     <dependency>
