@@ -36,10 +36,10 @@ spring:
                 redis-rate-limiter.replenishRate: 10  # 令牌桶的容积
                 redis-rate-limiter.burstCapacity: 3  # 流速 每秒
                 key-resolver: "#{@hostAddrKeyResolver}" #SPEL表达式去的对应的bean
-    redis:
-      host: 192.168.0.178
-      password: 123456
-      port: 6379
-      database: 1
+  redis:
+    host: 192.168.0.178
+    password: 123456
+    port: 6379
+    database: 1
 
 
