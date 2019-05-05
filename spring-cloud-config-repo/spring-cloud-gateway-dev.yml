@@ -7,7 +7,21 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka:9200/eureka/
-
+filters:
+  -name: Hystrix
+  args:
+    name: default
+    fallbackUri: 'forward:/defaultfallback'
+# hystrix 信号量隔离，3秒后自动超时
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 3000
+  shareSecurityContext: true
 spring:
   cloud:
     gateway:
