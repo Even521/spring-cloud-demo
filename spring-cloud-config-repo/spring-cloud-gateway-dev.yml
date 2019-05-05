@@ -12,9 +12,20 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: baidu
-          uri: http://www.baidu.com
+        - id: admin
+          uri: http://127.0.0.1:9203
           predicates:
-            - Path=/baidu
-        - id:
+            - Path=/admin/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 1  # 令牌桶的容积
+                redis-rate-limiter.burstCapacity: 3  # 流速 每秒
+                key-resolver: "#{@remoteAddrKeyResolver}" #SPEL表达式去的对应的bean
+      redis:
+        host: 192.168.0.178
+        password: 123456
+        port: 6379
+        database: 1
+
 
