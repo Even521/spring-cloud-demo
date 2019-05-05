@@ -21,7 +21,7 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 1  # 令牌桶的容积
                 redis-rate-limiter.burstCapacity: 3  # 流速 每秒
-                key-resolver: "#{@remoteAddrKeyResolver}" #SPEL表达式去的对应的bean
+                key-resolver: "#{@hostAddrKeyResolver}" #SPEL表达式去的对应的bean
       redis:
         host: 192.168.0.178
         password: 123456
