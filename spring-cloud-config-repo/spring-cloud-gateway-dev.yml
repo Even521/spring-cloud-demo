@@ -8,7 +8,7 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka:9200/eureka/
 filters:
-  -name: Hystrix
+ - name: Hystrix
   args:
     name: default
     fallbackUri: 'forward:/defaultfallback'

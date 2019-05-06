@@ -13,3 +13,4 @@ spring:
       #service-id: config
       label: ${spring.profiles.active}
       enabled: true
+

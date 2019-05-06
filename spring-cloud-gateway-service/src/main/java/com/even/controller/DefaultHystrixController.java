@@ -15,11 +15,11 @@ import java.util.concurrent.ConcurrentHashMap;
 @RestController
 @Log4j2
 public class DefaultHystrixController {
-   public static Map map=new ConcurrentHashMap(8);
+    public static Map map=new ConcurrentHashMap(8);
     /**
      * 失败状态码
      */
-   private final static int FAIL=-1;
+    private final static int FAIL=-1;
     @RequestMapping("/defaultfallback")
     public Map<String,String> defaultfallback(){
         log.error("降级处理");

@@ -8,7 +8,11 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @author even
+ * @date 2019/4/22 14:46
+ * @describe
+ */
 @SpringBootApplication
 @EnableTask
 public class SpringCloudTaskServiceApplication {
